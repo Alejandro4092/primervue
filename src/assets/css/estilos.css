@@ -1,12 +1,99 @@
-img{
-    width: "300px";
-    height: "300px";
+:root{
+    --primary: #2b6cb0; /* azul principal */
+    --accent: #ff6b6b;  /* color de énfasis */
+    --bg: #f6f8fa;
+    --text: #223344;
+}
 
+/* Reset básico */
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.4;
 }
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+/* Imágenes responsivas */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* Titulares */
+h1{ 
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:.5rem;
+}
+
 h2{
-    background-color: yellow;
+    color:#334155;
+    font-size:1.25rem;
+    margin: .75rem 0;
 }
-h1{
-    color: rebeccapurple;
-    background-color: lightcoral;
+
+/* Menu y navegación */
+.menu{
+    display:flex;
+    gap:0.75rem;
+    justify-content:center;
+    align-items:center;
+    padding:.6rem;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 4px 14px rgba(35,51,68,0.06);
 }
+
+.nav a{
+    color:var(--text);
+    text-decoration:none;
+    padding:.45rem .7rem;
+    border-radius:6px;
+    transition:background .15s ease,color .15s ease;
+}
+
+.nav a:hover{background:var(--primary);color:#fff}
+
+.card{
+    background:#fff;
+    padding:1rem;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(34,51,68,0.04);
+    margin:1rem 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:.45rem .8rem;
+    background:var(--accent);
+    color:#fff;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+}
+
+.center{text-align:center}
+.flex{display:flex;gap:1rem}
+
+@media (max-width:600px){
+    .menu{flex-direction:column}
+    .flex{flex-direction:column}
+    h1{font-size:1.4rem}
+}
+
+/* Pequeñas utilidades */
+.mt-1{margin-top:.5rem}
+.mb-1{margin-bottom:.5rem}
+
+/* Fin estilos globales */
