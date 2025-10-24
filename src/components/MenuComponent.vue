@@ -16,6 +16,9 @@
         <li>
             <router-link to="/directivas">Directivas</router-link>
         </li>
+         <li>
+            <router-link to="/parimpar">ParImpar</router-link>
+        </li>
     </ul>
 
   </div>

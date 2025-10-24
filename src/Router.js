@@ -3,6 +3,7 @@ import CineComponent from './components/CineComponent.vue'
 import MusicaComponent from './components/MusicaComponent.vue'
 import CicloVida from  './components/CicloVida.vue'
 import DirectivasComponent from './components/DirectivasComponent.vue'
+import ParImpar from './components/ParImpar.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const myRoutes = [
@@ -20,6 +21,9 @@ const myRoutes = [
     },
     {
         path:"/directivas", component: DirectivasComponent
+    },
+     {
+        path:"/parimpar", component: ParImpar
     }
 ]
 //Creamos una variable para el router Indicando el tipo de navegacion y las rutas
