@@ -97,3 +97,41 @@ h2{
 .mb-1{margin-bottom:.5rem}
 
 /* Fin estilos globales */
+
+/* ==============================
+   Estilos alternados: par / impar
+   - Aplicable a menús, listas y tablas
+   - Uso: para listas simples usa .list-striped
+          para tablas usa .table-striped
+============================== */
+
+/* menú: aplicamos fondo suave diferente para par/impar */
+.menu li{
+    display:inline-block; /* mantiene en fila, permite padding */
+    margin-right:.35rem;
+}
+
+.menu li:nth-child(odd) a{
+    background: rgba(43,108,176,0.08); /* tono del primary */
+}
+
+.menu li:nth-child(even) a{
+    background: rgba(255,107,107,0.07); /* tono del accent */
+}
+
+/* hover distinto según par/impar para reforzar la paleta */
+.menu li:nth-child(odd) a:hover{ background: var(--primary); color:#fff }
+.menu li:nth-child(even) a:hover{ background: var(--accent); color:#fff }
+
+/* listas con rayado alternado */
+.list-striped{ list-style:none; padding:0 }
+.list-striped li{ padding:.6rem; border-radius:6px }
+.list-striped li:nth-child(odd){ background: #ffffff }
+.list-striped li:nth-child(even){ background: #f3f6f9 }
+
+/* tablas rayadas (si usas <table>) */
+.table-striped{ border-collapse:collapse; width:100% }
+.table-striped tr:nth-child(even){ background:#f8fafc }
+.table-striped tr:nth-child(odd){ background:#ffffff }
+
+/* fin par/impar */
