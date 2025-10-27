@@ -19,6 +19,9 @@
          <li>
             <router-link to="/parimpar">ParImpar</router-link>
         </li>
+         <li>
+            <router-link to="/propiedadconmutada">PropiedadConmutada</router-link>
+        </li>
     </ul>
 
   </div>

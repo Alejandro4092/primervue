@@ -22,7 +22,7 @@ export default {
     },
     methods:{
       GenerarNumero(){
-        this.numero=Math.floor(Math.random()*100);
+        this.numero=Math.floor(Math.random()*100)+1;
       }
     }
 

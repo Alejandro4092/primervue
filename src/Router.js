@@ -4,6 +4,7 @@ import MusicaComponent from './components/MusicaComponent.vue'
 import CicloVida from  './components/CicloVida.vue'
 import DirectivasComponent from './components/DirectivasComponent.vue'
 import ParImpar from './components/ParImpar.vue'
+import PropiedadConmutada from './components/PropiedadConmutada.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const myRoutes = [
@@ -24,6 +25,9 @@ const myRoutes = [
     },
      {
         path:"/parimpar", component: ParImpar
+    },
+    {
+        path:"/propiedadconmutada", component: PropiedadConmutada
     }
 ]
 //Creamos una variable para el router Indicando el tipo de navegacion y las rutas
