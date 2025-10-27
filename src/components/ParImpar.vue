@@ -15,6 +15,9 @@
 <script>
 export default {
     name:"ParImpar",
+    computed:{
+
+    },
     data(){
         return{
         numero:0

@@ -5,6 +5,7 @@ import CicloVida from  './components/CicloVida.vue'
 import DirectivasComponent from './components/DirectivasComponent.vue'
 import ParImpar from './components/ParImpar.vue'
 import PropiedadConmutada from './components/PropiedadConmutada.vue'
+import MetodosFilters from './components/MetodosFilters.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const myRoutes = [
@@ -28,6 +29,9 @@ const myRoutes = [
     },
     {
         path:"/propiedadconmutada", component: PropiedadConmutada
+    },
+    {
+        path:"/metodosfilters", component: MetodosFilters
     }
 ]
 //Creamos una variable para el router Indicando el tipo de navegacion y las rutas
